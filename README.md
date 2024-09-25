@@ -1,25 +1,36 @@
-# as3-pong
-Actionscript 3 Pong game
-<br /><br />
-Sorry for no menu. Game forces you to play as it starts. This is for educational purposes. <br/>
-I didn't have much time. About 7 Hours, and in just one day. <br />
-<br />
-OOP code doesn't follow any design patterns or principles stated anywhere you might have read. <br />
-This one was quick :D <br />
-<br />
-Controls: 
-* Up Arrow - Move right Handle up
-* Down Arrow - Move right Handle down
-* W - Move left Handle up
-* S - Move left Handle down
-* Space - To continue after end of the turn (When th ball position is out of bounds on left and right edges)
+## as3-pong
 
-<br />
-Whoever gets 10 asap, WINS! :rage1:
+This is a simple Pong game implemented in Actionscript 3.
 
-<br />
-And yeah, I couldn't lower the background music volume yet :rage4:
-<br />
-Thanks for stopping by!
-<br /><br/>
-Redpix &copy; 2015 
+### Usage
+
+The game is self-contained and starts automatically. There is no menu or configuration options.
+
+**Controls:**
+
+* **Up Arrow:** Move right handle up
+* **Down Arrow:** Move right handle down
+* **W:** Move left handle up
+* **S:** Move left handle down
+* **Space:** Continue after the ball goes out of bounds
+
+The first player to reach 10 points wins.
+
+### Code Structure
+
+The code is organized using object-oriented programming, but it doesn't adhere to any specific design patterns or principles.
+
+**Main Classes:**
+
+* **Pong:**  The main class containing the game logic and event handling.
+* **Ball:**  Represents the ball, managing its position, velocity, and collision detection.
+* **Handle:** Represents the paddles, handling movement and interaction with the ball.
+* **Player:** Represents a player, managing their score and handle.
+* **Counter:**  Displays the score of each player.
+* **PongSoundPlayer:**  Handles playing sound effects and background music.
+
+### Game Logic
+
+The game loop updates the position of the ball and handles collision detection with the paddles, walls, and out-of-bounds areas. When the ball collides with a paddle, it bounces off. When the ball goes out of bounds, the corresponding player scores a point.
+
+The game ends when one of the players reaches the specified score limit (default is 10).
